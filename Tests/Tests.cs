@@ -6,13 +6,16 @@ namespace Tests
 {
     public class MiscLibTests
     {
+        
         [Theory]
-        [InlineData(5, 10, 50)]
-        [InlineData(4, 7, 60)] 
-        [InlineData(3, 5, 70)] 
-        public void CalcRectAreaTest(int length, int width, int result)
+        [InlineData(5, 10)]      
+        
+        public void CalcRectAreaTest(int length, int width)
         {
-            var test = new GroupOneFunctions();
+            var g = new GroupOneFunctions();
+
+            Assert.Equal(15, g.CalcRectArea(length, width));
+            
         }
     }
 }

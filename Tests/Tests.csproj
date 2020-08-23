@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\misclib\misclib.csproj" />
+    <ProjectReference Include="..\MiscLib\MiscLib.csproj" />
   </ItemGroup>
 
 </Project>
