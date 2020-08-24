@@ -5,17 +5,43 @@ using MiscLib;
 namespace Tests
 {
     public class MiscLibTests
-    {
+    {   
+        [Fact]  
         
-        [Theory]
-        [InlineData(5, 10)]      
-        
-        public void CalcRectAreaTest(int length, int width)
+        public void CalcRectAreaTest()
         {
-            var g = new GroupOneFunctions();
+            GroupOneFunctions g = new GroupOneFunctions();
 
-            Assert.Equal(15, g.CalcRectArea(length, width));
+            Assert.Equal(20, g.CalcRectArea (5, 10));
             
         }
+
+        /*
+        public void IsFactiorialTest()
+        {
+            GroupOneFunctions g = new GroupOneFunctions(); 
+        }
+
+        public void CelciusToFarenheitTest()
+        {
+            GroupOneFunctions g = new GroupOneFunctions(); 
+        }
+
+        public void IsPalindromeTest()
+        {
+            GroupOneFunctions g = new GroupOneFunctions(); 
+        }
+
+        public void StringReplaceTest()
+        {
+            GroupOneFunctions g = new GroupOneFunctions(); 
+        }
+
+        public void CharCount()
+        {
+            GroupOneFunctions g = new GroupOneFunctions(); 
+        }
+
+        */
     }
 }
