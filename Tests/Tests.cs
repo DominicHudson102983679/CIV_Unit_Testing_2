@@ -12,7 +12,7 @@ namespace Tests
         {
             GroupOneFunctions g = new GroupOneFunctions();
 
-            Assert.Equal(20, g.CalcRectArea (5, 10));
+            Assert.Equal(50, g.CalcRectArea (5, 10));
             
         }
 
