@@ -6,7 +6,7 @@ namespace MiscLib
     {
         //---- Group 1 Functions ----------
         public int CalcRectArea(int length, int width) {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public bool IsFactiorialNum(int num) {
