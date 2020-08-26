@@ -6,40 +6,50 @@ namespace Tests
 {
     public class MiscLibTests
     {   
-        [Fact]  
+        GroupOneFunctions g = new GroupOneFunctions ();
+
+        /* -----------------------
+        [Theory]
+        [InlineData(6, 2, 3)]
+        [InlineData(18, 6, 3)]
+        [InlineData(8, 2, 4)]
+
+        public void CalcRectAreaTest (int expected, int length, int width) 
+        {
+            Assert.Equal(expected, g.CalcRectArea(length, width));
+        }
+        */
+
+        [Fact]
+
+        public void IsFactorialTest()
+        {
+            Assert.True (g.IsFactorialNum(120));
+            Assert.True (g.IsFactorialNum(1));
+            Assert.False (g.IsFactorialNum(40));
+            Assert.False (g.IsFactorialNum(60));
+        }
         
-        public void CalcRectAreaTest()
-        {
-            GroupOneFunctions g = new GroupOneFunctions();
-
-            Assert.Equal(50, g.CalcRectArea (5, 10));
-            
-        }
-
         /*
-        public void IsFactiorialTest()
-        {
-            GroupOneFunctions g = new GroupOneFunctions(); 
-        }
 
         public void CelciusToFarenheitTest()
         {
-            GroupOneFunctions g = new GroupOneFunctions(); 
+           
         }
 
         public void IsPalindromeTest()
         {
-            GroupOneFunctions g = new GroupOneFunctions(); 
+             
         }
 
         public void StringReplaceTest()
         {
-            GroupOneFunctions g = new GroupOneFunctions(); 
+             
         }
 
         public void CharCount()
         {
-            GroupOneFunctions g = new GroupOneFunctions(); 
+            
         }
 
         */
