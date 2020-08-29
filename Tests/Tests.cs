@@ -8,7 +8,6 @@ namespace Tests
     {   
         GroupOneFunctions g = new GroupOneFunctions ();
 
-        /* -----------------------
         [Theory]
         [InlineData(6, 2, 3)]
         [InlineData(18, 6, 3)]
@@ -18,8 +17,8 @@ namespace Tests
         {
             Assert.Equal(expected, g.CalcRectArea(length, width));
         }
-        */
-
+        
+        /*
         [Fact]
 
         public void IsFactorialTest()
